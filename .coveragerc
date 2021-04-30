@@ -1,0 +1,12 @@
+[run]
+branch = True
+data_file = .coverage
+source=estore_proj
+omit =
+    estore_proj/settings*
+    estore_proj/conf*
+    *wsgi.py
+    *migrations*
+    *admin.py
+    *static*
+    *templates*
