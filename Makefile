@@ -107,6 +107,7 @@ upgrade: piptools ## update the requirements/*.txt files with the latest package
 	pip-compile --upgrade -o requirements/validation.txt requirements/validation.in
 	pip-compile --upgrade -o requirements/dev.txt requirements/dev.in
 	pip-compile --upgrade -o requirements/production.txt requirements/production.in
+	pip-compile --upgrade -o requirements/ci.txt requirements/ci.in
 
 extract_translations: ## extract strings to be translated, outputting .mo files
 	python manage.py makemessages -l en -v1 -d django
